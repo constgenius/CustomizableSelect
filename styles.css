@@ -1,0 +1,31 @@
+select,
+::picker(select){
+    appearance: base-select;
+}
+
+select{
+    width: 100%;
+}
+
+.flag{
+    width: 30px;
+    height: 20px;
+}
+
+selectedcontent, option{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+option{
+    padding-block: 0.25rem;
+}
+
+option::checkmark{
+    display: none;
+}
+
+option:checked{
+    background: #a7d7ef;
+}
